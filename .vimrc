@@ -14,7 +14,7 @@ let mapleader=' '
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
-noremap <Down> <NOP>
+noremap <Right> <NOP>
 nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz
 nnoremap uh :noh<CR>
