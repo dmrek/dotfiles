@@ -1,0 +1,53 @@
+source ~/.vimrc
+
+""""""""""""""""""""""""""""""""""""""""""""""" debug """"""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>r :action Run<CR>
+nnoremap <leader>x :action Stop<CR>
+nnoremap <leader>d :action Debug<CR>
+nnoremap <leader>dn :action StepOver<CR>
+nnoremap <leader>di :action StepInto<CR>
+nnoremap <leader>do :action StepOut<CR>
+nnoremap <leader>dr :action Resume<CR>
+nnoremap <leader>db :action ToggleLineBreakpoint<CR>
+nnoremap <leader>dm :action XDebugger.MuteBreakpoints<CR>
+nnoremap <leader>drb :action Debugger.RemoveAllBreakpointsInFile<CR>
+nnoremap <leader>drB :action Debugger.RemoveAllBreakpoints<CR>
+""""""""""""""""""""""""""""""""""""""""""""""" find """""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>f :action FindInPath<CR>
+nnoremap <leader>fa :action GotoAction<CR>
+nnoremap <leader>fc :action GotoClass<CR>
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>fm :action FileStructurePopup<CR>
+nnoremap <leader>fi :action GotoImplementation<CR>
+nnoremap <leader>fs :action GotoSuperMethod<CR>
+nnoremap <leader>fr :action RecentFiles<CR>
+" nnoremap <leader>fR :action RecentChangedFiles<CR>                                   "do I need it?
+nnoremap <leader>fs :action RiderManageRecentProjects<CR>
+""""""""""""""""""""""""""""""""""""""""""""""" goto """""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""" next/prev """"""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>nb :action GotoNextBookmark<CR>
+nnoremap <leader>pb :action GotoPreviousBookmark<CR>
+nnoremap <leader>nc :action VcsShowNextChangeMarker<CR>
+nnoremap <leader>pc :action VcsShowPrevChangeMarker<CR>
+nnoremap <leader>ns :action NextProjectWindow<CR>
+nnoremap <leader>ps :action PreviousProjectWindow<CR>
+""""""""""""""""""""""""""""""""""""""""""""" refactor """""""""""""""""""""""""""""""""""""""""""""
+nnoremap <Leader>rc :action ReformatCode<CR>
+nnoremap <leader>re :action RenameElement<CR>
+""""""""""""""""""""""""""""""""""""""""""""""" .vimrc """""""""""""""""""""""""""""""""""""""""""""
+nnoremap ,v :e ~/.vimrc<CR>
+nnoremap ,i :e ~/.ideavimrc<CR>
+nnoremap ,r :action IdeaVim.ReloadVimRc.reload<CR>
+nnoremap ,ta :action VimFindActionIdAction<CR>
+""""""""""""""""""""""""""""""""""""""""""""""" tabs """""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>w :action CloseContent<CR>
+nnoremap <leader>wa :action CloseAllEditors<CR>
+""""""""""""""""""""""""""""""""""""""""""" tool windows """""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>sf :action SelectInProjectView<CR>
+nnoremap <leader>lw :action JumpToLastWindow<CR>
+""""""""""""""""""""""""""""""""""""""""""""""" zen """"""""""""""""""""""""""""""""""""""""""""""""
+" nnoremap <D-e> :action FocusEditor<CR>                                             "in IDE settings
+nnoremap <leader>ha :action HideActiveWindow<CR>
+nnoremap <leader>haa :action HideAllWindows<CR>
+nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
