@@ -51,3 +51,6 @@ nnoremap <leader>lw :action JumpToLastWindow<CR>
 nnoremap <leader>ha :action HideActiveWindow<CR>
 nnoremap <leader>haa :action HideAllWindows<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
+" nnoremap <leader>f :action ToggleFullScreen<CR>                                      "weird behaviour
+" nnoremap <leader>fz :action ToggleZenMode<CR>                                        "weird behaviour
+" nnoremap <leader>fz :action ToggleDistractionFreeMode \| action ToggleFullScreen<CR> "weird behaviour
