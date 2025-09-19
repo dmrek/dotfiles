@@ -1,8 +1,11 @@
-source ~/.vimrc
+let winHome = 'C:/Users/d_krek/'
+let linuxHome = '//wsl.localhost/Ubuntu/home/krek/'
+
+execute 'source ' . linuxHome . '.vimrc'
 
 """"""""""""""""""""""""""""""""""""""""""""""" .vimrc """""""""""""""""""""""""""""""""""""""""""""
-nnoremap \\v :e ~/.vimrc<CR>
-nnoremap \\i :e ~/.ideavimrc<CR>
+nnoremap \\v :execute 'e ' . linuxHome . '.vimrc'<CR>
+nnoremap \\i :execute 'e ' . winHome . '.ideavimrc'<CR>
 nnoremap \\r :action IdeaVim.ReloadVimRc.reload<CR>
 nnoremap \\t :action VimFindActionIdAction<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" build """"""""""""""""""""""""""""""""""""""""""""""
