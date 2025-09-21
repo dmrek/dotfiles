@@ -41,7 +41,7 @@ nnoremap ,i :e ~/.ideavimrc<CR>
 nnoremap ,r :action IdeaVim.ReloadVimRc.reload<CR>
 nnoremap ,ta :action VimFindActionIdAction<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" tabs """""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>w :action CloseContent<CR>
+" nnoremap <leader>w :action CloseContent<CR>                                                  "YAGNI
 nnoremap <leader>wa :action CloseAllEditors<CR>
 """"""""""""""""""""""""""""""""""""""""""" tool windows """""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
