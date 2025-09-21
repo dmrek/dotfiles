@@ -1,9 +1,9 @@
 source ~/.vimrc
 
 """"""""""""""""""""""""""""""""""""""""""""""" debug """"""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>r :action Run<CR>
+nnoremap <leader>rr :action Run<CR>
 nnoremap <leader>x :action Stop<CR>
-nnoremap <leader>d :action Debug<CR>
+nnoremap <leader>dd :action Debug<CR>
 nnoremap <leader>dn :action StepOver<CR>
 nnoremap <leader>di :action StepInto<CR>
 nnoremap <leader>do :action StepOut<CR>
