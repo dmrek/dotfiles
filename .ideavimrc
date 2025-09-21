@@ -46,10 +46,10 @@ nnoremap <leader>wa :action CloseAllEditors<CR>
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>sf :action SelectInProjectView<CR>
 nnoremap <leader>lw :action JumpToLastWindow<CR>
+" :action FocusEditor                     "Should stick with <Esc>. Mapping in IDE works like shit on Windows (either <C-e> or <A-e>)
+" :action HideActiveWindow                "same as abowe, weired on Windows. Shoud stick with <S-Esc>
+nnoremap <leader>ha :action HideAllWindows<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" zen """"""""""""""""""""""""""""""""""""""""""""""""
-" nnoremap <D-e> :action FocusEditor<CR>                                             "in IDE settings
-nnoremap <leader>ha :action HideActiveWindow<CR>
-nnoremap <leader>haa :action HideAllWindows<CR>
 nnoremap <leader>z :action ToggleDistractionFreeMode<CR>
 " nnoremap <leader>f :action ToggleFullScreen<CR>                                      "weird behaviour
 " nnoremap <leader>fz :action ToggleZenMode<CR>                                        "weird behaviour
