@@ -22,6 +22,7 @@ nnoremap <leader>fi :action GotoImplementation<CR>
 nnoremap <leader>fs :action GotoSuperMethod<CR>
 nnoremap <leader>fr :action RecentFiles<CR>
 " nnoremap <leader>fR :action RecentChangedFiles<CR>                                   "do I need it?
+nnoremap <leader>fe :action SelectInProjectView<CR>
 nnoremap <leader>fs :action RiderManageRecentProjects<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" goto """""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""" next/prev """"""""""""""""""""""""""""""""""""""""""""
@@ -45,7 +46,6 @@ nnoremap ,ta :action VimFindActionIdAction<CR>
 nnoremap <leader>wa :action CloseAllEditors<CR>
 """"""""""""""""""""""""""""""""""""""""""" tool windows """""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
-nnoremap <leader>sf :action SelectInProjectView<CR>
 nnoremap <leader>lw :action JumpToLastWindow<CR>
 " :action FocusEditor                     "Should stick with <Esc>. Mapping in IDE works like shit on Windows (either <C-e> or <A-e>)
 " :action HideActiveWindow                "same as abowe, weired on Windows. Shoud stick with <S-Esc>
