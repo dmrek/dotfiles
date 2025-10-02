@@ -35,7 +35,7 @@ nnoremap <leader>ps :action PreviousProjectWindow<CR>
 """"""""""""""""""""""""""""""""""""""""""""" refactor """""""""""""""""""""""""""""""""""""""""""""
 nnoremap <Leader>rc :action ReformatCode<CR>
 nnoremap <leader>re :action RenameElement<CR>
-nnoremap <leader>rl :action Vcs.RollbackChangedLines<CR>
+nnoremap <leader>ul :action Vcs.RollbackChangedLines<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" .vimrc """""""""""""""""""""""""""""""""""""""""""""
 nnoremap ,v :e ~/.vimrc<CR>
 nnoremap ,i :e ~/.ideavimrc<CR>
