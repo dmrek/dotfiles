@@ -43,7 +43,7 @@ nnoremap ,r :action IdeaVim.ReloadVimRc.reload<CR>
 nnoremap ,ta :action VimFindActionIdAction<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" tabs """""""""""""""""""""""""""""""""""""""""""""""
 " nnoremap <leader>w :action CloseContent<CR>                                                  "YAGNI
-nnoremap <leader>wa :action CloseAllEditors<CR>
+nnoremap <leader>wa :action CloseAllEditorsButActive<CR>
 """"""""""""""""""""""""""""""""""""""""""" tool windows """""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>th :action Terminal.OpenInReworkedTerminal<CR>
