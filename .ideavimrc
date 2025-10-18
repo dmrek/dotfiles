@@ -22,6 +22,8 @@ nnoremap <leader>bm :action XDebugger.MuteBreakpoints<CR>
 nnoremap <leader>bra :action Debugger.RemoveAllBreakpointsInFile<CR>
 nnoremap <leader>brA :action Debugger.RemoveAllBreakpoints<CR>
 """"""""""""""""""""""""""""""""""""""""""""" bookmarks """"""""""""""""""""""""""""""""""""""""""""
+nnoremap ,b :action ToggleBookmark<CR>
+nnoremap ,ba :action ShowBookmarks<CR>
 nnoremap ,nb :action GotoNextBookmark<CR>
 nnoremap ,pb :action GotoPreviousBookmark<CR>
 """""""""""""""""""""""""""""""""""""""""""""""" new """""""""""""""""""""""""""""""""""""""""""""""
