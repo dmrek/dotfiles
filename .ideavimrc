@@ -1,5 +1,10 @@
 source ~/.vimrc
 
+""""""""""""""""""""""""""""""""""""""""""""""" .vimrc """""""""""""""""""""""""""""""""""""""""""""
+nnoremap \\v :e ~/.vimrc<CR>
+nnoremap \\i :e ~/.ideavimrc<CR>
+nnoremap \\r :action IdeaVim.ReloadVimRc.reload<CR>
+nnoremap \\t :action VimFindActionIdAction<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" debug """"""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>x :action Stop<CR>
 nnoremap <leader>ru :action Run<CR>
@@ -48,11 +53,6 @@ nnoremap <leader>nc :action VcsShowNextChangeMarker<CR>
 nnoremap <leader>pc :action VcsShowPrevChangeMarker<CR>
 nnoremap <leader>ul :action Vcs.RollbackChangedLines<CR>
 nnoremap <leader>a :action Annotate<CR>
-""""""""""""""""""""""""""""""""""""""""""""""" .vimrc """""""""""""""""""""""""""""""""""""""""""""
-nnoremap ,v :e ~/.vimrc<CR>
-nnoremap ,i :e ~/.ideavimrc<CR>
-nnoremap ,r :action IdeaVim.ReloadVimRc.reload<CR>
-nnoremap ,t :action VimFindActionIdAction<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" tabs """""""""""""""""""""""""""""""""""""""""""""""
 " nnoremap <leader>w :action CloseContent<CR>                                                  "YAGNI
 nnoremap <leader>wa :action CloseAllEditorsButActive<CR>
