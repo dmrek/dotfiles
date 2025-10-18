@@ -4,11 +4,13 @@ set clipboard^=unnamed,unnamedplus
 set incsearch
 set hlsearch
 set ignorecase smartcase
+set history=5000
 set number
 set relativenumber
 set scrolloff=5
 set shiftwidth=4 smarttab
 set expandtab
+set vb
 
 let mapleader=' '
 noremap <Up> <NOP>
