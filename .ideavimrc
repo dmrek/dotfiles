@@ -31,12 +31,14 @@ nnoremap <leader>pp :action PreviousProjectWindow<CR>
 """"""""""""""""""""""""""""""""""""""""""""" next/prev """"""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>nb :action GotoNextBookmark<CR>
 nnoremap <leader>pb :action GotoPreviousBookmark<CR>
-nnoremap <leader>nc :action VcsShowNextChangeMarker<CR>
-nnoremap <leader>pc :action VcsShowPrevChangeMarker<CR>
 """"""""""""""""""""""""""""""""""""""""""""" refactor """""""""""""""""""""""""""""""""""""""""""""
 nnoremap <Leader>rc :action ReformatCode<CR>
 nnoremap <leader>re :action RenameElement<CR>
+""""""""""""""""""""""""""""""""""""""""""""""""" git """"""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>nc :action VcsShowNextChangeMarker<CR>
+nnoremap <leader>pc :action VcsShowPrevChangeMarker<CR>
 nnoremap <leader>ul :action Vcs.RollbackChangedLines<CR>
+nnoremap <leader>a :action Annotate<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" .vimrc """""""""""""""""""""""""""""""""""""""""""""
 nnoremap ,v :e ~/.vimrc<CR>
 nnoremap ,i :e ~/.ideavimrc<CR>
