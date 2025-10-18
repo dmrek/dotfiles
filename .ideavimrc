@@ -58,6 +58,7 @@ nnoremap <leader>a :action Annotate<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" tabs """""""""""""""""""""""""""""""""""""""""""""""
 " nnoremap <leader>w :action CloseContent<CR>                                                  "YAGNI
 nnoremap <leader>wa :action CloseAllEditorsButActive<CR>
+nnoremap <leader>wu :action CloseAllUnmodifiedEditors<CR>
 """"""""""""""""""""""""""""""""""""""""""" tool windows """""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>th :action Terminal.OpenInReworkedTerminal<CR>
