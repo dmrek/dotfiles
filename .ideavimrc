@@ -23,15 +23,16 @@ nnoremap <leader>fs :action GotoSuperMethod<CR>
 nnoremap <leader>fr :action RecentFiles<CR>
 " nnoremap <leader>fR :action RecentChangedFiles<CR>                                   "do I need it?
 nnoremap <leader>fe :action SelectInProjectView<CR>
-nnoremap <leader>fs :action RiderManageRecentProjects<CR>
-""""""""""""""""""""""""""""""""""""""""""""""" goto """""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""" projects """""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>fp :action RiderManageRecentProjects<CR>
+nnoremap <leader>cp :action CloseProject<CR>
+nnoremap <leader>np :action NextProjectWindow<CR>
+nnoremap <leader>pp :action PreviousProjectWindow<CR>
 """"""""""""""""""""""""""""""""""""""""""""" next/prev """"""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>nb :action GotoNextBookmark<CR>
 nnoremap <leader>pb :action GotoPreviousBookmark<CR>
 nnoremap <leader>nc :action VcsShowNextChangeMarker<CR>
 nnoremap <leader>pc :action VcsShowPrevChangeMarker<CR>
-nnoremap <leader>ns :action NextProjectWindow<CR>
-nnoremap <leader>ps :action PreviousProjectWindow<CR>
 """"""""""""""""""""""""""""""""""""""""""""" refactor """""""""""""""""""""""""""""""""""""""""""""
 nnoremap <Leader>rc :action ReformatCode<CR>
 nnoremap <leader>re :action RenameElement<CR>
