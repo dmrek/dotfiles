@@ -21,6 +21,9 @@ nnoremap <leader>ba :action ViewBreakpoints<CR>
 nnoremap <leader>bm :action XDebugger.MuteBreakpoints<CR>
 nnoremap <leader>bra :action Debugger.RemoveAllBreakpointsInFile<CR>
 nnoremap <leader>brA :action Debugger.RemoveAllBreakpoints<CR>
+""""""""""""""""""""""""""""""""""""""""""""" bookmarks """"""""""""""""""""""""""""""""""""""""""""
+nnoremap ,nb :action GotoNextBookmark<CR>
+nnoremap ,pb :action GotoPreviousBookmark<CR>
 """""""""""""""""""""""""""""""""""""""""""""""" new """""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>n :action NewElement<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" find """""""""""""""""""""""""""""""""""""""""""""""
@@ -41,9 +44,6 @@ nnoremap <leader>fp :action RiderManageRecentProjects<CR>
 nnoremap <leader>cp :action CloseProject<CR>
 nnoremap <leader>np :action NextProjectWindow<CR>
 nnoremap <leader>pp :action PreviousProjectWindow<CR>
-""""""""""""""""""""""""""""""""""""""""""""" next/prev """"""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>nb :action GotoNextBookmark<CR>
-nnoremap <leader>pb :action GotoPreviousBookmark<CR>
 """"""""""""""""""""""""""""""""""""""""""""" refactor """""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>rc :action ReformatCode<CR>
 nnoremap <leader>ri :action OptimizeImports<CR>
