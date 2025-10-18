@@ -13,6 +13,9 @@ set expandtab
 set vb
 
 let mapleader=' '
+let maplocalleader=','
+"      thirdleader='\'
+
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
