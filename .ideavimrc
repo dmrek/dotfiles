@@ -47,9 +47,9 @@ nnoremap <leader>cp :action CloseProject<CR>
 nnoremap <leader>np :action NextProjectWindow<CR>
 nnoremap <leader>pp :action PreviousProjectWindow<CR>
 """"""""""""""""""""""""""""""""""""""""""""" refactor """""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>rc :action ReformatCode<CR>
-nnoremap <leader>ri :action OptimizeImports<CR>
-nnoremap <leader>re :action RenameElement<CR>
+nnoremap ,r :action ReformatCode<CR>
+nnoremap ,ri :action OptimizeImports<CR>
+nnoremap ,re :action RenameElement<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""" git """"""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>nc :action VcsShowNextChangeMarker<CR>
 nnoremap <leader>pc :action VcsShowPrevChangeMarker<CR>
