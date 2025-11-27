@@ -22,6 +22,8 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 noremap <C-u> <C-u>zz
 noremap <C-d> <C-d>zz
+noremap go o<Esc>
+noremap gO O<Esc>
 noremap U <C-r>
 noremap uh :noh<CR>
 
