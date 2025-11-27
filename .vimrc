@@ -20,10 +20,10 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
-nnoremap U <C-r>
-nnoremap <C-u> <C-u>zz
-nnoremap <C-d> <C-d>zz
-nnoremap uh :noh<CR>
+noremap <C-u> <C-u>zz
+noremap <C-d> <C-d>zz
+noremap U <C-r>
+noremap uh :noh<CR>
 
 call plug#begin()
 
