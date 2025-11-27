@@ -7,7 +7,7 @@ nnoremap \\r :action IdeaVim.ReloadVimRc.reload<CR>
 nnoremap \\t :action VimFindActionIdAction<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" debug """"""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>x :action Stop<CR>
-nnoremap <leader>ru :action Run<CR>
+nnoremap <leader>rp :action Run<CR>
 nnoremap <leader>d :action Debug<CR>
 nnoremap <leader>a :action XDebugger.AttachToProcess<CR>
 nnoremap <leader>r :action Resume<CR>
