@@ -9,6 +9,7 @@ nnoremap \\t :action VimFindActionIdAction<CR>
 nnoremap <leader>x :action Stop<CR>
 nnoremap <leader>ru :action Run<CR>
 nnoremap <leader>d :action Debug<CR>
+nnoremap <leader>a :action XDebugger.AttachToProcess<CR>
 nnoremap <leader>r :action Resume<CR>
 nnoremap <leader>o :action StepOver<CR>
 nnoremap <leader>i :action StepInto<CR>
