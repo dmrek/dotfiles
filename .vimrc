@@ -1,6 +1,6 @@
 syntax on
 
-set clipboard^=unnamed,unnamedplus
+set clipboard=unnamed
 set incsearch
 set hlsearch
 set ignorecase smartcase
