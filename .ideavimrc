@@ -51,10 +51,10 @@ nnoremap ,r :action ReformatCode<CR>
 nnoremap ,ri :action OptimizeImports<CR>
 nnoremap ,re :action RenameElement<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""" git """"""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>nc :action VcsShowNextChangeMarker<CR>
-nnoremap <leader>pc :action VcsShowPrevChangeMarker<CR>
-nnoremap <leader>ul :action Vcs.RollbackChangedLines<CR>
-nnoremap <leader>a :action Annotate<CR>
+nnoremap ,nc :action VcsShowNextChangeMarker<CR>
+nnoremap ,pc :action VcsShowPrevChangeMarker<CR>
+nnoremap ,u :action Vcs.RollbackChangedLines<CR>
+nnoremap ,a :action Annotate<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" tabs """""""""""""""""""""""""""""""""""""""""""""""
 " nnoremap <leader>w :action CloseContent<CR>                                                  "YAGNI
 nnoremap <leader>wa :action CloseAllEditorsButActive<CR>
