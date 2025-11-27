@@ -55,6 +55,7 @@ nnoremap ,nc :action VcsShowNextChangeMarker<CR>
 nnoremap ,pc :action VcsShowPrevChangeMarker<CR>
 nnoremap ,u :action Vcs.RollbackChangedLines<CR>
 nnoremap ,a :action Annotate<CR>
+nnoremap ,d :action Compare.SameVersion<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" tabs """""""""""""""""""""""""""""""""""""""""""""""
 " nnoremap <leader>w :action CloseContent<CR>                                                  "YAGNI
 nnoremap <leader>wa :action CloseAllEditorsButActive<CR>
