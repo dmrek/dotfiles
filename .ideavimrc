@@ -57,9 +57,11 @@ nnoremap ,u :action Vcs.RollbackChangedLines<CR>
 nnoremap ,a :action Annotate<CR>
 nnoremap ,d :action Compare.SameVersion<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" tabs """""""""""""""""""""""""""""""""""""""""""""""
-" nnoremap <leader>w :action CloseContent<CR>                                                  "YAGNI
+nnoremap <leader>w :action CloseContent<CR>
 nnoremap <leader>wa :action CloseAllEditorsButActive<CR>
-nnoremap <leader>wu :action CloseAllUnmodifiedEditors<CR>
+nnoremap <leader>wum :action CloseAllUnmodifiedEditors<CR>
+nnoremap <leader>wup :action CloseAllUnpinnedEditors<CR>
+nnoremap <leader>p :action PinActiveTab<CR>
 """"""""""""""""""""""""""""""""""""""""""" tool windows """""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>th :action Terminal.OpenInReworkedTerminal<CR>
