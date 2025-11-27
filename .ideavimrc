@@ -44,7 +44,7 @@ nnoremap <leader>fr :action RecentFiles<CR>
 nnoremap <leader>fe :action SelectInProjectView<CR>
 """"""""""""""""""""""""""""""""""""""""""""" projects """""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>fp :action RiderManageRecentProjects<CR>
-nnoremap <leader>cp :action CloseProject<CR>
+nnoremap <leader>wp :action CloseProject<CR>
 nnoremap <leader>np :action NextProjectWindow<CR>
 nnoremap <leader>pp :action PreviousProjectWindow<CR>
 """"""""""""""""""""""""""""""""""""""""""""" refactor """""""""""""""""""""""""""""""""""""""""""""
