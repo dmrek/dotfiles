@@ -1,6 +1,6 @@
 syntax on
 
-set clipboard=unnamed
+set clipboard=unnamed,unnamedplus
 set incsearch
 set hlsearch
 set ignorecase smartcase
@@ -16,12 +16,15 @@ let mapleader=' '
 let maplocalleader=','
 "      thirdleader='\'
 
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
 noremap <C-u> <C-u>zz
 noremap <C-d> <C-d>zz
+noremap <C-h> 40h
+noremap <C-l> 40l
+nmap <Up> <C-u>
+nmap <Down> <C-d>
+nmap <Left> <C-h>
+nmap <Right> <C-l>
+
 noremap go o<Esc>
 noremap gO O<Esc>
 noremap U <C-r>
