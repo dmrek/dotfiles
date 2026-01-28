@@ -60,6 +60,10 @@ nnoremap ,u :action Vcs.RollbackChangedLines<CR>
 nnoremap ,a :action Annotate<CR>
 nnoremap ,d :action Compare.SameVersion<CR>
 nnoremap ,h :action Vcs.ShowHistoryForBlock<CR>
+xnoremap ,h :action Vcs.ShowHistoryForBlock<CR>
+nnoremap ,ha :action Vcs.ShowTabbedFileHistory<CR>
+nnoremap ,lh :action LocalHistory.ShowHistory<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""" tabs """""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>w :action CloseContent<CR>
 nnoremap <leader>wa :action CloseAllEditorsButActive<CR>
