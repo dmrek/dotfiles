@@ -5,8 +5,10 @@ nnoremap \\v :e ~/.vimrc<CR>
 nnoremap \\i :e ~/.ideavimrc<CR>
 nnoremap \\r :action IdeaVim.ReloadVimRc.reload<CR>
 nnoremap \\t :action VimFindActionIdAction<CR>
+""""""""""""""""""""""""""""""""""""""""""""""" build """"""""""""""""""""""""""""""""""""""""""""""
+nnoremap <leader>bp :action BuildSolutionAction<CR>
 """"""""""""""""""""""""""""""""""""""""""""""" debug """"""""""""""""""""""""""""""""""""""""""""""
-nnoremap <leader>x :action Stop<CR>
+nnoremap <leader>c :action Stop<CR>
 nnoremap <leader>rp :action Run<CR>
 nnoremap <leader>d :action Debug<CR>
 nnoremap <leader>a :action XDebugger.AttachToProcess<CR>
