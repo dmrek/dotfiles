@@ -51,6 +51,7 @@ nnoremap <leader>np :action NextProjectWindow<CR>
 nnoremap <leader>pp :action PreviousProjectWindow<CR>
 """"""""""""""""""""""""""""""""""""""""""""" refactor """""""""""""""""""""""""""""""""""""""""""""
 nnoremap ,r :action ReformatCode<CR>
+xnoremap ,r :action ReformatCode<CR>
 nnoremap ,ri :action OptimizeImports<CR>
 nnoremap ,re :action RenameElement<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""" git """"""""""""""""""""""""""""""""""""""""""""""
