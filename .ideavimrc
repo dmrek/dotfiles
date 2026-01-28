@@ -42,7 +42,7 @@ nnoremap <leader>fm :action FileStructurePopup<CR>
 nnoremap <leader>fi :action GotoImplementation<CR>
 nnoremap <leader>fs :action GotoSuperMethod<CR>
 nnoremap <leader>fr :action RecentFiles<CR>
-" nnoremap <leader>fR :action RecentChangedFiles<CR>                                   "do I need it?
+nnoremap <leader>fR :action RecentChangedFiles<CR>
 nnoremap <leader>fe :action SelectInProjectView<CR>
 """"""""""""""""""""""""""""""""""""""""""""" projects """""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>fp :action RiderManageRecentProjects<CR>
