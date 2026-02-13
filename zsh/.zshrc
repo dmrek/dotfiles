@@ -29,6 +29,7 @@ eval "$(zoxide init --cmd cd zsh)"
 # Snippets
 zinit snippet OMZP::git
 zinit snippet OMZP::command-not-found
+zinit snippet OMZP::ssh-agent
 
 zinit cdreplay -q
 
@@ -63,3 +64,6 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias c='clear'
 
+# ssh-agent config
+zstyle :OMZP::ssh-agent quiet yes
+zstyle :OMZP::ssh-agent lazy yes
