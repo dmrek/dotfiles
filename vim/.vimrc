@@ -30,8 +30,15 @@ let mapleader=' '
 let maplocalleader=','
 "      thirdleader='\'
 
+xnoremap <leader>p "_dP
+
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 noremap <C-u> <C-u>zz
 noremap <C-d> <C-d>zz
+nnoremap n nzzzv
+nnoremap N Nzzzv
 
 noremap <C-h> 40h
 noremap <C-l> 40l
@@ -40,6 +47,8 @@ nmap <Up> <NOP>
 nmap <Down> <NOP>
 nmap <Left> <NOP>
 nmap <Right> <NOP>
+
+nmap Q <NOP>
 
 noremap go o<Esc>
 noremap gO O<Esc>
