@@ -1,15 +1,21 @@
 syntax on
 
 set clipboard=unnamed,unnamedplus
+
 set incsearch
-set hlsearch
-set ignorecase smartcase
+set ignorecase
+set smartcase
+
 set history=5000
+
 set number
 set relativenumber
+
 set scrolloff=5
-set shiftwidth=4 smarttab
+set shiftwidth=4
+set smarttab
 set expandtab
+
 set vb
 
 let mapleader=' '
@@ -18,17 +24,18 @@ let maplocalleader=','
 
 noremap <C-u> <C-u>zz
 noremap <C-d> <C-d>zz
+
 noremap <C-h> 40h
 noremap <C-l> 40l
-nmap <Up> <C-u>
-nmap <Down> <C-d>
-nmap <Left> <C-h>
-nmap <Right> <C-l>
+
+nmap <Up> <NOP>
+nmap <Down> <NOP>
+nmap <Left> <NOP>
+nmap <Right> <NOP>
 
 noremap go o<Esc>
 noremap gO O<Esc>
 noremap U <C-r>
-noremap uh :noh<CR>
 
 call plug#begin()
 
