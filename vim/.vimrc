@@ -19,12 +19,10 @@ set history=5000
 set number
 set relativenumber
 
-set scrolloff=5
+set scrolloff=8
 set shiftwidth=4
 set smarttab
 set expandtab
-
-set vb
 
 let mapleader=' '
 let maplocalleader=','
