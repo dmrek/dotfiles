@@ -2,9 +2,17 @@ syntax on
 
 set clipboard=unnamed,unnamedplus
 
+set nohlsearch
 set incsearch
 set ignorecase
 set smartcase
+
+" Auto-enable hlsearch when searching, disable after
+augroup dynamic_hlsearch
+  autocmd!
+  autocmd CmdlineEnter /,\? set hlsearch
+  autocmd CmdlineLeave /,\? set nohlsearch
+augroup END
 
 set history=5000
 

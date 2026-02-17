@@ -2,6 +2,7 @@ vim.cmd.syntax("on")
 
 vim.opt.clipboard = { "unnamed", "unnamedplus" }
 
+vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
