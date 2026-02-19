@@ -34,6 +34,9 @@ zinit snippet OMZP::ssh-agent
 
 zinit cdreplay -q
 
+# Environment variables
+export EDITOR=vim
+
 # Keybindings
 bindkey '^ ' autosuggest-accept
 bindkey '^l' forward-word
