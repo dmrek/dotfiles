@@ -21,7 +21,7 @@ return {
                 -- In case you changed your mind, provide a keybind that lets you
                 -- cancel the snipe and close the window.
                 ---@type string|string[]
-                cancel_snipe = "q",
+                cancel_snipe = "<C-c>",
 
                 -- Close the buffer under the cursor
                 -- Remove "j" and "k" from your dictionary to navigate easier to delete
