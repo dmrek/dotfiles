@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Cleanup .kiro Steering Files",
+  "description": "Reviews user-level steering files in the .kiro directory, removes duplicates, removes project-specific examples, and improves accuracy without introducing new rules",
+  "version": "1",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review all markdown files in the .kiro directory. These are user-level steering files for cross-project rules. Your tasks:\n\n1. Identify and remove duplicate content across files\n2. Remove project-specific examples (like specific class names, project-specific patterns)\n3. Keep only generic, cross-project applicable rules\n4. Improve clarity and accuracy of existing rules\n5. DO NOT introduce new rules - only clean up existing ones\n\nFor each file, show what changes you're making and why. Focus on making these rules universally applicable across different projects."
+  }
+}
