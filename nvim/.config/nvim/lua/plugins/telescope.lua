@@ -5,8 +5,23 @@ return {
         { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
     },
     config = function()
+        local actions = require("telescope.actions")
         require('telescope').setup({
             defaults = {
+                mappings = {
+                    i = {
+                        ["<C-j>"] = actions.move_selection_next,
+                        ["<C-k>"] = actions.move_selection_previous,
+                        ["<C-n>"] = false,
+                        ["<C-p>"] = false,
+                    },
+                    n = {
+                        ["<C-j>"] = actions.move_selection_next,
+                        ["<C-k>"] = actions.move_selection_previous,
+                        ["<C-n>"] = false,
+                        ["<C-p>"] = false,
+                    },
+                },
                 vimgrep_arguments = {
                     'rg',
                     '--color=never',
