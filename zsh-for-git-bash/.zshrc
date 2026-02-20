@@ -27,7 +27,7 @@ zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-completions
 
 # Load completions
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -C
 
 # Snippets
 zinit snippet OMZL::git.zsh
