@@ -39,6 +39,7 @@ export EDITOR=vim
 
 # Keybindings
 bindkey '^ ' autosuggest-accept
+bindkey '^h' backward-word
 bindkey '^l' forward-word
 bindkey '^k' history-search-backward
 bindkey '^j' history-search-forward
