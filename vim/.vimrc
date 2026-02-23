@@ -57,5 +57,9 @@ call plug#begin()
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'justinmk/vim-sneak'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 call plug#end()
+
+set termguicolors
+colorscheme catppuccin_macchiato
