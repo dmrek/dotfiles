@@ -29,6 +29,10 @@ zinit light zsh-users/zsh-completions
 # Load completions
 autoload -Uz compinit && compinit -C
 
+# ssh-agent config
+zstyle :OMZP::ssh-agent quiet yes
+zstyle :OMZP::ssh-agent lazy yes
+
 # Snippets
 zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
@@ -67,7 +71,3 @@ alias c='clear'
 unsetopt BEEP
 unsetopt HIST_BEEP
 unsetopt LIST_BEEP
-
-# ssh-agent config
-zstyle :OMZP::ssh-agent quiet yes
-zstyle :OMZP::ssh-agent lazy yes

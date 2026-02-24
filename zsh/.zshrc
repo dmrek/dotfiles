@@ -26,6 +26,10 @@ autoload -Uz compinit && compinit
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+# ssh-agent config (must be before loading the plugin)
+zstyle :omz:plugins:ssh-agent quiet yes
+zstyle :omz:plugins:ssh-agent lazy yes
+
 # Snippets
 zinit snippet OMZL::git.zsh
 zinit snippet OMZP::git
@@ -66,7 +70,3 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
-
-# ssh-agent config
-zstyle :OMZP::ssh-agent quiet yes
-zstyle :OMZP::ssh-agent lazy yes
