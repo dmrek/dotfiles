@@ -1,0 +1,6 @@
+[core]
+	editor = vim
+	pager = delta
+	autocrlf = input
+[delta]
+	side-by-side = true
