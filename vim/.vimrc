@@ -52,6 +52,9 @@ noremap go o<Esc>
 noremap gO O<Esc>
 noremap U <C-r>
 
+" Remove ^M (CRLF)
+nnoremap <leader>cr :%s/\r//g<CR>
+
 call plug#begin()
 
 Plug 'tpope/vim-commentary'

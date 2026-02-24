@@ -21,3 +21,5 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "go", "o<Esc>")
 vim.keymap.set("n", "gO", "O<Esc>")
 vim.keymap.set("n", "U", "<C-r>")
+
+vim.keymap.set("n", "<leader>cr", ":%s/\\r//g<CR>", { desc = "Remove ^M (CRLF)" })
