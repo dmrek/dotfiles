@@ -1,8 +1,6 @@
 vim.cmd.syntax("on")
 
-vim.schedule(function()
-    vim.opt.clipboard = { "unnamed", "unnamedplus" }
-end)
+vim.opt.clipboard = { "unnamed", "unnamedplus" }
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
