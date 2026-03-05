@@ -31,6 +31,7 @@ return {
                     '--column',
                     '--smart-case',
                     '--hidden',
+                    '--follow',
                     '--glob',
                     "!.git/*"
                 },
@@ -41,6 +42,7 @@ return {
                         "rg",
                         "--files",
                         "--hidden",
+                        "--follow",
                         "--glob",
                         "!.git/*"
                     }
