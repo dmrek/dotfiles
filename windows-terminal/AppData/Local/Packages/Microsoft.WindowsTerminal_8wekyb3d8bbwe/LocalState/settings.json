@@ -1,0 +1,131 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [],
+    "copyFormatting": "none",
+    "copyOnSelect": false,
+    "defaultProfile": "{cbc46bdf-73f6-54b5-969c-f01a587bb300}",
+    "keybindings": 
+    [
+        {
+            "id": "Terminal.DuplicatePaneAuto",
+            "keys": "alt+shift+d"
+        }
+    ],
+    "launchMode": "maximized",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "colorScheme": "Campbell",
+            "cursorShape": "filledBox",
+            "font": 
+            {
+                "face": "MesloLGS Nerd Font"
+            }
+        },
+        "list": 
+        [
+            {
+                "commandline": "C:\\Users\\d_krek\\AppData\\Local\\Programs\\Git\\bin\\bash.exe",
+                "guid": "{a1b2c3d4-e5f6-7890-abcd-ef1234567890}",
+                "hidden": false,
+                "icon": "C:\\Users\\d_krek\\AppData\\Local\\Programs\\Git\\git-ico.png",
+                "name": "Git Bash",
+                "startingDirectory": "%USERPROFILE%\\dev\\tpicap"
+            },
+            {
+                "colorScheme": "Catppuccin Macchiato",
+                "guid": "{cbc46bdf-73f6-54b5-969c-f01a587bb300}",
+                "hidden": false,
+                "name": "Arch",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{fa2734fb-6bbf-5223-897a-c14076321407}",
+                "hidden": false,
+                "name": "Debian",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "guid": "{817ebfc9-045a-5da0-ae00-6673b6c4ae17}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Microsoft.WSL"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell",
+                "startingDirectory": "%USERPROFILE%\\dev\\tpicap"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "Command Prompt"
+            }
+        ]
+    },
+    "schemes": 
+    [
+        {
+            "background": "#24273A",
+            "black": "#494D64",
+            "blue": "#8AADF4",
+            "brightBlack": "#5B6078",
+            "brightBlue": "#8AADF4",
+            "brightCyan": "#8BD5CA",
+            "brightGreen": "#A6DA95",
+            "brightPurple": "#F5BDE6",
+            "brightRed": "#ED8796",
+            "brightWhite": "#A5ADCB",
+            "brightYellow": "#EED49F",
+            "cursorColor": "#F4DBD6",
+            "cyan": "#8BD5CA",
+            "foreground": "#CAD3F5",
+            "green": "#A6DA95",
+            "name": "Catppuccin Macchiato",
+            "purple": "#F5BDE6",
+            "red": "#ED8796",
+            "selectionBackground": "#5B6078",
+            "white": "#B8C0E0",
+            "yellow": "#EED49F"
+        }
+    ],
+    "startupActions": "new-tab -p \"Arch\" ",
+    "theme": "dark",
+    "themes": 
+    [
+        {
+            "name": "Catppuccin Macchiato",
+            "tab": 
+            {
+                "background": "#24273AFF",
+                "iconStyle": "default",
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "tabRow": 
+            {
+                "background": "#1E2030FF",
+                "unfocusedBackground": "#181926FF"
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "experimental.rainbowFrame": false,
+                "frame": null,
+                "unfocusedFrame": null,
+                "useMica": false
+            }
+        }
+    ]
+}
