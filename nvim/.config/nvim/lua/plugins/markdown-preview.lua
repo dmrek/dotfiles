@@ -7,7 +7,7 @@ return {
       vim.g.mkdp_browserfunc = "OpenBrowser"
       vim.cmd([[
         function! OpenBrowser(url)
-          silent! execute '!cmd.exe /c start "" ' . a:url
+          silent! execute '!/mnt/c/Windows/System32/cmd.exe /c start "" ' . a:url
         endfunction
       ]])
     end
