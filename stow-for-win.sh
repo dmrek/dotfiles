@@ -3,19 +3,38 @@
 # stow.sh - GNU Stow replacement for Windows
 # Creates Windows-native symlinks mirroring the stow directory structure.
 #
-# Usage: ./stow.sh <package> [package2 ...]
+# Usage: ./stow.sh [-D|--delete] [-R|--restow] <package> [package2 ...]
 # Example: ./stow.sh nvim kitty hypr
+#          ./stow.sh -R windows-terminal   (unstow + stow)
+#          ./stow.sh -D windows-terminal   (unstow only)
 #
 # Each package directory is walked recursively. Files inside are symlinked
 # into $HOME following the same relative path (just like GNU Stow).
-# Requires an elevated shell or Developer Mode enabled for symlink creation.
+#
+# Limitations:
+#   - Windows only: requires MSYS2/Git Bash (uses cygpath, powershell.exe)
+#   - Requires Developer Mode enabled or an elevated (admin) shell
+#   - Does not handle directory symlinks, only files
+#   - Will not overwrite existing files/symlinks that point elsewhere
 
 set -euo pipefail
 
 DOTFILES_DIR="$(cd "$(dirname "$0")" && pwd)"
+RESTOW=false
+DELETE=false
+
+while [[ "${1:-}" == -* ]]; do
+  case "$1" in
+    -R|--restow) RESTOW=true; shift ;;
+    -D|--delete) DELETE=true; shift ;;
+    *) echo "Unknown option: $1"; exit 1 ;;
+  esac
+done
 
 if [[ $# -eq 0 ]]; then
-  echo "Usage: stow.sh <package> [package2 ...]"
+  echo "Usage: stow.sh [-D|--delete] [-R|--restow] <package> [package2 ...]"
+  echo "  -D, --delete  Remove symlinks only (unstow)"
+  echo "  -R, --restow  Remove existing symlinks then re-create them"
   echo "Available packages:"
   for dir in "$DOTFILES_DIR"/*/; do
     pkg="$(basename "$dir")"
@@ -28,6 +47,29 @@ fi
 # Convert a MSYS2/Git Bash path to a Windows path
 to_winpath() {
   cygpath -w "$1" 2>/dev/null || echo "$1"
+}
+
+unlink_package() {
+  local pkg="$1"
+  local pkg_dir="$DOTFILES_DIR/$pkg"
+
+  echo "Unstowing $pkg..."
+
+  find "$pkg_dir" -type f -printf '%P\n' | while read -r rel; do
+    local target="$HOME/$rel"
+    local src="$pkg_dir/$rel"
+
+    if [[ -L "$target" ]]; then
+      local current_target
+      current_target="$(readlink "$target" 2>/dev/null || true)"
+      if [[ "$current_target" == "$src" ]]; then
+        rm "$target"
+        echo "  removed: ~/$rel"
+      else
+        echo "  skip (not ours): ~/$rel -> $current_target"
+      fi
+    fi
+  done
 }
 
 link_package() {
@@ -82,7 +124,14 @@ link_package() {
 }
 
 for pkg in "$@"; do
-  link_package "$pkg"
+  if $DELETE; then
+    unlink_package "$pkg"
+  elif $RESTOW; then
+    unlink_package "$pkg"
+    link_package "$pkg"
+  else
+    link_package "$pkg"
+  fi
 done
 
 echo "Done."
