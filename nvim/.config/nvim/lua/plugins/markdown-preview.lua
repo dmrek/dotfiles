@@ -1,6 +1,6 @@
 return {
   "iamcco/markdown-preview.nvim",
-  build = "cd app && npm install",
+  build = "cd app && npm install && git checkout yarn.lock",
   ft = "markdown",
   config = function()
     if vim.fn.has("wsl") == 1 then
