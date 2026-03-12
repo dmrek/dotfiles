@@ -45,7 +45,8 @@
                 "guid": "{cbc46bdf-73f6-54b5-969c-f01a587bb300}",
                 "hidden": false,
                 "name": "Arch",
-                "source": "Microsoft.WSL"
+                "source": "Microsoft.WSL",
+                "startingDirectory": "~/dev/tpicap"
             },
             {
                 "guid": "{fa2734fb-6bbf-5223-897a-c14076321407}",
